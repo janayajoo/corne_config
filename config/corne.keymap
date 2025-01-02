@@ -7,6 +7,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     behaviors {
@@ -52,7 +55,7 @@
 &kp ESCAPE        &kp Q                &kp W         &kp F          &kp P           &kp B               &kp J          &kp L               &kp U        &kp Y             &kp SEMICOLON         &kp DELETE
 &kp TAB           &HML LEFT_CONTROL A  &HML LALT R   &HML LGUI S    &HML LSHIFT T   &HML LC(T) G        &kp M          &HMR RIGHT_SHIFT N  &HMR RGUI E  &HMR RIGHT_ALT I  &HMR RIGHT_CONTROL O  &kp SQT
 &kp LEFT_CONTROL  &HML LC(Z) Z         &HML K_CUT X  &HML K_COPY C  &HML K_PASTE D  &HML K_REFRESH V    &kp K          &kp H               &kp COMMA    &kp DOT           &kp FSLH              &kp PRINTSCREEN
-                                                     &to 4          &lt 1 CAPS      &kp SPACE           &kp BACKSPACE  &lt 2 ENTER         &mo 3
+                                                     &to 4          &lt 1 CAPS      &kp SPACE           &kp BACKSPACE  &lt 2 ENTER         &mo 4
             >;
         };
 
@@ -65,10 +68,10 @@
 
             display-name = "Numbers";
             bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans        &kp N7        &kp N8        &kp N9        &kp EQUAL  &kp COMMA       &kp BSPC
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS  &kp PERIOD      &trans
-&trans  &trans        &trans        &trans        &trans        &trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS   &kp UNDERSCORE  &trans
-                                    &trans        &trans        &kp SPACE     &kp N0        &trans        &trans
+&none  &none         &none         &none         &none         &none         &kp N7        &kp N8        &kp N9        &kp EQUAL  &kp COMMA       &kp BSPC
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS  &kp PERIOD      &none
+&none  &none         &none         &none         &none         &none         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS   &kp UNDERSCORE  &none
+                                   &mo 5         &none         &kp SPACE     &kp N0        &none         &none
             >;
         };
 
@@ -82,28 +85,37 @@
             display-name = "Symbols";
             bindings = <
 &kp TAB    &kp EXCL       &kp AT            &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET      &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp DELETE
-&kp LCTRL  &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE  &trans    &trans       &kp MINUS      &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp SLASH
-&kp LSHFT  &trans         &trans            &trans     &trans    &trans       &kp UNDER      &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                                            &kp LGUI   &trans    &kp SPACE    &kp BACKSPACE  &trans     &kp RALT
+&kp LCTRL  &kp LESS_THAN  &kp GREATER_THAN  &kp GRAVE  &none     &none        &kp MINUS      &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp SLASH
+&kp LSHFT  &none          &none             &none      &none     &none        &kp UNDER      &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+                                            &kp LGUI   &none     &kp SPACE    &kp BACKSPACE  &none      &kp RALT
             >;
         };
 
         game {
             display-name = "Game";
             bindings = <
-&kp ESCAPE        &kp Q                &kp W        &kp F        &kp P          &kp B        &kp J          &kp L               &kp U        &kp Y             &kp SEMICOLON         &kp BSPC
-&kp TAB           &HML LEFT_CONTROL A  &HML LALT R  &HML LGUI S  &HML LSHIFT T  &kp G        &kp M          &HMR RIGHT_SHIFT N  &HMR RGUI E  &HMR RIGHT_ALT I  &HMR RIGHT_CONTROL O  &kp SQT
-&kp LEFT_CONTROL  &kp Z                &kp X        &kp C        &kp D          &kp V        &kp K          &kp H               &kp COMMA    &kp DOT           &kp FSLH              &kp ESC
-                                                    &kp LGUI     &lt 1 CAPS     &kp SPACE    &kp BACKSPACE  &lt 2 ENTER         &kp RALT
+&kp ESCAPE        &kp Q  &kp W  &kp E       &kp R     &kp T        &none  &none  &none  &none  &none  &none
+&kp TAB           &kp A  &kp S  &kp D       &kp F     &kp M        &none  &none  &none  &none  &none  &none
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C       &kp V     &kp B        &none  &none  &none  &none  &none  &none
+                                &kp LSHIFT  &kp CAPS  &kp SPACE    &to 0  &none  &none
             >;
         };
 
         function {
             bindings = <
-&trans  &kp F6  &kp F7  &kp F8   &kp F9   &kp F10    &trans  &kp K_PREVIOUS   &kp K_PLAY_PAUSE  &kp K_STOP  &kp K_NEXT  &trans
-&trans  &kp F1  &kp F2  &kp F3   &kp F4   &kp F5     &trans  &kp C_VOLUME_UP  &kp C_VOL_DN      &kp K_MUTE  &trans      &trans
-&trans  &trans  &trans  &kp F11  &kp F12  &trans     &trans  &trans           &trans            &trans      &trans      &trans
-                        &trans   &trans   &trans     &trans  &trans           &trans
+&none  &kp F6  &kp F7  &kp F8   &kp F9   &kp F10    &none  &kp K_PREVIOUS   &kp K_PLAY_PAUSE  &kp K_STOP  &kp K_NEXT  &none
+&none  &kp F1  &kp F2  &kp F3   &kp F4   &kp F5     &none  &kp C_VOLUME_UP  &kp C_VOL_DN      &kp K_MUTE  &none       &none
+&none  &none   &none   &kp F11  &kp F12  &none      &none  &none            &none             &none       &none       &none
+                       &none    &none    &none      &none  &none            &none
+            >;
+        };
+
+        mouse {
+            bindings = <
+&none  &none  &none  &none  &none  &none    &none     &none           &mmv MOVE_UP    &none            &none            &none
+&none  &none  &none  &none  &none  &none    &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none            &none
+&none  &none  &none  &none  &none  &none    &none     &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_DOWN   &msc SCRL_RIGHT  &none
+                     &none  &none  &none    &mkp MB1  &mkp MB2        &mkp MB3
             >;
         };
     };
