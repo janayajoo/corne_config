@@ -88,12 +88,13 @@
             >;
         };
 
-        layer_3 {
+        layer_4 {
+            display-name = "Base";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&kp ESCAPE        &kp Q                &kp W        &kp F        &kp P          &kp B        &kp J          &kp L               &kp U        &kp Y             &kp SEMICOLON         &kp BSPC
+&kp TAB           &HML LEFT_CONTROL A  &HML LALT R  &HML LGUI S  &HML LSHIFT T  &kp G        &kp M          &HMR RIGHT_SHIFT N  &HMR RGUI E  &HMR RIGHT_ALT I  &HMR RIGHT_CONTROL O  &kp SQT
+&kp LEFT_CONTROL  &kp Z                &kp X        &kp C        &kp D          &kp V        &kp K          &kp H               &kp COMMA    &kp DOT           &kp FSLH              &kp ESC
+                                                    &kp LGUI     &lt 1 CAPS     &kp SPACE    &kp BACKSPACE  &lt 2 ENTER         &kp RALT
             >;
         };
     };
