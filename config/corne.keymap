@@ -61,10 +61,10 @@
 
             display-name = "Base";
             bindings = <
-&kp ESCAPE  &kp Q                &kp W         &kp F          &kp P           &kp B               &kp J          &kp L               &kp U        &kp Y             &kp SEMICOLON         &kp DELETE
-&kp TAB     &HML LEFT_CONTROL A  &HML LALT R   &HML LGUI S    &HML LSHIFT T   &HML LC(T) G        &kp M          &HMR RIGHT_SHIFT N  &HMR RGUI E  &HMR RIGHT_ALT I  &HMR RIGHT_CONTROL O  &kp SQT
-&kp LSHIFT  &HML K_UNDO Z        &HML K_CUT X  &HML K_COPY C  &HML K_PASTE D  &HML K_REFRESH V    &kp K          &kp H               &kp COMMA    &kp DOT           &kp FSLH              &kp PRINTSCREEN
-                                               &to 3          &lt 1 CAPS      &kp SPACE           &kp BACKSPACE  &lt 2 ENTER         &mo 4
+&kp ESCAPE      &kp Q                &kp W         &kp F          &kp P           &kp B               &kp J          &kp L               &kp U        &kp Y             &kp SEMICOLON         &kp DELETE
+&bt BT_CLR_ALL  &HML LEFT_CONTROL A  &HML LALT R   &HML LGUI S    &HML LSHIFT T   &HML LC(T) G        &kp M          &HMR RIGHT_SHIFT N  &HMR RGUI E  &HMR RIGHT_ALT I  &HMR RIGHT_CONTROL O  &kp SQT
+&kp LSHIFT      &HML K_UNDO Z        &HML K_CUT X  &HML K_COPY C  &HML K_PASTE D  &HML K_REFRESH V    &kp K          &kp H               &kp COMMA    &kp DOT           &kp FSLH              &kp PRINTSCREEN
+                                                   &to 3          &lt 1 CAPS      &kp SPACE           &kp BACKSPACE  &lt 2 ENTER         &mo 4
             >;
         };
 
