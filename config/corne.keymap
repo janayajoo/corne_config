@@ -103,10 +103,10 @@
         game {
             display-name = "Game";
             bindings = <
-&kp ESCAPE        &kp Q  &kp W  &kp E       &kp R     &kp T        &none  &none  &none  &none  &none  &none
-&kp TAB           &kp A  &kp S  &kp D       &kp F     &kp M        &none  &none  &none  &none  &none  &none
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C       &kp V     &kp B        &none  &none  &none  &none  &none  &none
-                                &kp LSHIFT  &kp CAPS  &kp SPACE    &to 0  &none  &none
+&kp TAB           &kp M  &kp Q  &kp W  &kp E     &kp R         &none  &none  &none  &none  &none  &none
+&kp LEFT_SHIFT    &kp B  &kp A  &kp S  &kp D     &kp F         &none  &none  &none  &none  &none  &none
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp V  &kp C     &kp ESCAPE    &none  &none  &none  &none  &none  &none
+                                &to 0  &kp CAPS  &kp SPACE     &to 0  &none  &none
             >;
         };
 
