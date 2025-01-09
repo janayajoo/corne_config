@@ -61,10 +61,10 @@
 
             display-name = "Base";
             bindings = <
-&kp ESCAPE  &kp Q                &kp W         &kp F          &kp P           &kp B               &kp J          &kp L               &kp U        &kp Y             &kp SEMICOLON         &kp DELETE
-&kp TAB     &HML LEFT_CONTROL A  &HML LALT R   &HML LGUI S    &HML LSHIFT T   &HML LC(T) G        &kp M          &HMR RIGHT_SHIFT N  &HMR RGUI E  &HMR RIGHT_ALT I  &HMR RIGHT_CONTROL O  &kp SQT
-&kp LSHIFT  &HML K_UNDO Z        &HML K_CUT X  &HML K_COPY C  &HML K_PASTE D  &HML K_REFRESH V    &kp K          &kp H               &kp COMMA    &kp DOT           &kp FSLH              &kp PRINTSCREEN
-                                               &to 3          &lt 1 CAPS      &kp SPACE           &kp BACKSPACE  &lt 2 ENTER         &mo 4
+&kp ESCAPE  &kp Q                &kp W            &kp F             &kp P              &kp B                  &kp J          &kp L               &kp U        &kp Y             &kp SEMICOLON         &kp DELETE
+&kp TAB     &HML LEFT_CONTROL A  &HML LALT R      &HML LGUI S       &HML LSHIFT T      &HML LC(T) G           &kp M          &HMR RIGHT_SHIFT N  &HMR RGUI E  &HMR RIGHT_ALT I  &HMR RIGHT_CONTROL O  &kp SQT
+&kp LSHIFT  &HML C_AC_UNDO Z     &HML C_AC_CUT X  &HML C_AC_COPY C  &HML C_AC_PASTE D  &HML C_AC_REFRESH V    &kp K          &kp H               &kp COMMA    &kp DOT           &kp FSLH              &kp PRINTSCREEN
+                                                  &to 3             &lt 1 CAPS         &kp SPACE              &kp BACKSPACE  &lt 2 ENTER         &mo 4
             >;
         };
 
@@ -77,10 +77,10 @@
 
             display-name = "Numbers";
             bindings = <
-&none  &none         &none         &none         &none         &none             &kp N7        &kp N8         &kp N9        &kp EQUAL  &kp COMMA       &kp BSPC
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR        &kp NUMBER_4  &kp N5         &kp NUMBER_6  &kp MINUS  &kp PERIOD      &none
-&none  &none         &none         &none         &none         &bt BT_CLR_ALL    &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp PLUS   &kp UNDERSCORE  &none
-                                   &none         &none         &kp SPACE         &kp N0        &kp BACKSPACE  &none
+&none  &none         &none         &none         &none         &none             &kp N7         &kp N8        &kp N9        &kp EQUAL  &kp COMMA       &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR        &kp NUMBER_4   &kp N5        &kp NUMBER_6  &kp MINUS  &kp PERIOD      &none
+&none  &none         &none         &none         &none         &bt BT_CLR_ALL    &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp PLUS   &kp UNDERSCORE  &none
+                                   &none         &none         &kp SPACE         &kp BACKSPACE  &none         &none
             >;
         };
 
